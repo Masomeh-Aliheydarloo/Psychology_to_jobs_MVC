@@ -1,10 +1,10 @@
 
 
-import React from 'react'
+import React from 'react' //npm i --save-dev @types/react
 import './index.css'
 import App from './App.tsx'
 import { BrowserRouter } from 'react-router-dom'//npm i react-router-dom  npm i @types/react-router-dom
-import ReactDOM from 'react-dom/client'
+import ReactDOM from 'react-dom/client' //npm i --save-dev @types/react-dom
 import { AuthProvider } from './components/AuthContext.tsx'
 
  //import { HelmetProvider } from 'react-helmet-async'; //npm install react-helmet-async@latest
