@@ -1,0 +1,55 @@
+/*https://tailwindcss.com/docs/theme*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import "tailwindcss";
+@theme {
+  
+  /*https://tailwindcss.com/docs/font-family*/
+
+ --font-roboto: "Roboto", sans-serif; 
+
+  --breakpoint-sm: 40rem;
+  --breakpoint-md: 48rem;
+  --breakpoint-lg: 64rem;
+  --breakpoint-xl: 80rem;
+  --breakpoint-2xl: 96rem;
+  
+  --color-black: #000;
+  --color-white: #fff;
+
+
+  --color-*: initial;
+  --color-dark_bg_nav: #001d3d;
+  --color-light_bg_nav: #ffcad4;
+  --color-text_dark:#90e0ef;
+  --color-text_light: #184e77;
+
+  --color-light_bg_subnav: #b5838d;
+  --color-dark_bg_subnav: #90e0ef;
+
+  --color-text_light_subnav: #184e77;
+  --color-text_dark_subnav: #001d3d;
+
+  --color-text_white: #f8f7ff;
+  --color-text_black: #01161e;
+
+  --color-light_bg_body: #dedbd2;
+  --color-dark_bg_body: #8da9c4;
+
+ --color-light-gray:#A9A9A9;
+ --color-dark-gray:#008b8b;
+
+--color-text-error:#F43378;
+
+--color-text-green1:#013220;
+--color-text-green2:#014421;
+--color-text-green3:#355E3B;
+--color-text-green4:#8A9A5B;
+--color-text-green5:#BCB88A;
+  
+ 
+  /* ... */
+}
+@custom-variant dark (&:where(.dark, .dark *));
+/*pallete https://coolors.co/palettes/trending*/
+/*https://tailwindcss.com/docs/theme*/
+
