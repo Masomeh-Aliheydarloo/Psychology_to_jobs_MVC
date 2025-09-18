@@ -16,13 +16,13 @@ export const root = ReactDOM.createRoot(container as HTMLElement);
 root.render(
 
     <React.StrictMode>
-   
+       <HelmetProvider>
         <BrowserRouter>
           <AuthProvider>
             <App />
             </AuthProvider>
         </BrowserRouter>
-       
+       </HelmetProvider>
     </React.StrictMode>
 
 );
