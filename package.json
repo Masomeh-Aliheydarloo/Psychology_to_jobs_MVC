@@ -1,0 +1,15 @@
+{
+  "name": "psychology-to-jobs",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "npm --prefix frontend run build && tsc --project backend/tsconfig.json",
+    "start": "node backend/dist/server.js",
+    "dev": "concurrently \"npm --prefix backend run dev\" \"npm --prefix frontend run dev\""
+  },
+  "dependencies": {
+    "concurrently": "^8.2.0",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "react-helmet-async": "^2.0.5"
+  }
+}
