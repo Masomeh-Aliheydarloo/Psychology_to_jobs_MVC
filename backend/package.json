@@ -2,10 +2,11 @@
   "name": "backend",
   "version": "1.0.0",
   "description": "",
-  "main": "server.ts",
+ "main": "dist/server.js",
   "scripts": {
-    "dev": "ts-node-dev --respawn --transpile-only server.ts",
+    "dev": "ts-node src/server.ts",
     "build": "tsc",
+    "postinstall": "cd ../frontend && npm install && npm run build",
     "start": "node dist/server.js"
   },
   "keywords": [],
