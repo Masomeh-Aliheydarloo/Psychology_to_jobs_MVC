@@ -2,10 +2,10 @@
   "name": "psychology-to-jobs",
   "version": "1.0.0",
  "scripts": {
-  "build": "npm frontend run build && npm backend run build",
-  "start": "node backend/dist/server.js",
-  "dev": "concurrently \"npm  backend run dev\" \"npm frontend run dev\""
-},
+    "build": "npm --prefix frontend install && npm --prefix frontend run build && npm --prefix backend run build",
+    "start": "node backend/dist/server.js",
+    "dev": "concurrently \"npm --prefix backend run dev\" \"npm --prefix frontend run dev\""
+  },
   "dependencies": {
     "@types/react-router-dom": "^5.3.3",
     "concurrently": "^8.2.0",
