@@ -57,10 +57,8 @@ app.use('/api', userRouter);
 // Serve React frontend
 // If CommonJS, you can use __dirname directly
 if (isProduction) {
-  const frontendPath = path.join(__dirname, '../frontend/dist');
+  const frontendPath = path.join(process.cwd(), 'frontend', 'dist');
   app.use(express.static(frontendPath));
-
-  // Catch-all route for React router
   app.get('*', (req, res) => {
     res.sendFile(path.join(frontendPath, 'index.html'));
   });
@@ -70,3 +68,4 @@ const PORT = process.env.PORT || 8080;
 app.listen(PORT, () => {
   console.log(`Server running in ${isProduction ? 'production' : 'development'} mode on port ${PORT}`);
 });
+
