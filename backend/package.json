@@ -2,11 +2,10 @@
   "name": "backend",
   "version": "1.0.0",
   "description": "",
-  "main": "server.ts",
- "scripts": {
-  "start": "node server.ts",
-  "build": "vite build"
-}
+  "main": "server.js",
+  "scripts": {
+    "start": "node dist/server.js",
+    "build": "tsc"
   },
   "keywords": [],
   "author": "",
