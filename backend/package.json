@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "main": "server.ts",
-  "scripts": {
-    "dev": "ts-node-dev --respawn --transpile-only server.ts",
-    "start": "node server.js",
+ "scripts": {
+  "start": "node server.js",
   "build": "vite build"
+}
   },
   "keywords": [],
   "author": "",
