@@ -2,7 +2,7 @@
   "name": "psychology-to-jobs",
   "version": "1.0.0",
   "scripts": {
-   "build": "vite build"
+   "build": "npm install --omit=dev && npm run build"
     "start": "node backend/dist/server.js",
     "dev": "concurrently \"npm --prefix backend run dev\" \"npm --prefix frontend run dev\""
   },
