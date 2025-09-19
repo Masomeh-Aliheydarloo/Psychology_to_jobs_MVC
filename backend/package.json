@@ -2,12 +2,12 @@
   "name": "backend",
   "version": "1.0.0",
   "description": "",
-  "main": "dist/server.js",
+  "main": "server.js",
   "scripts": {
     "dev": "ts-node src/server.ts",
     "build": "tsc",
     "postinstall": "cd ../frontend && npm install && npm run build",
-    "start": "node dist/server.js"
+    "start": "node server.js"
   },
   "keywords": [],
   "author": "",
