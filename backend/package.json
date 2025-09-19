@@ -2,13 +2,13 @@
   "name": "backend",
   "version": "1.0.0",
   "description": "",
-  "main": "server.js",
+  "main": "dist/server.js",
   "scripts": {
-  "start": "node dist/server.js",
-  "dev": "ts-node src/server.ts",
-  "build": "tsc",
-  "postinstall": "cd ../frontend && npm install && npm run build"
-},
+    "dev": "ts-node src/server.ts",
+    "build": "tsc",
+    "postinstall": "cd ../frontend && npm install && npm run build",
+    "start": "node dist/server.js"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
