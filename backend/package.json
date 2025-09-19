@@ -5,8 +5,8 @@
   "main": "server.ts",
   "scripts": {
     "dev": "ts-node-dev --respawn --transpile-only server.ts",
-    "build": "tsc",
-    "start": "node dist/server.js"
+    "start": "node server.js",
+  "build": "vite build"
   },
   "keywords": [],
   "author": "",
