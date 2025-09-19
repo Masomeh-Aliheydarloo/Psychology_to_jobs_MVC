@@ -1,11 +1,11 @@
 {
   "name": "psychology-to-jobs",
   "version": "1.0.0",
-  "scripts": {
-   "build": "npm install --omit=dev && npm run build",
-    "start": "node backend/dist/server.js",
-    "dev": "concurrently \"npm --prefix backend run dev\" \"npm --prefix frontend run dev\""
-  },
+ "scripts": {
+  "build": "npm --prefix frontend run build && npm --prefix backend run build",
+  "start": "node backend/dist/server.js",
+  "dev": "concurrently \"npm --prefix backend run dev\" \"npm --prefix frontend run dev\""
+},
   "dependencies": {
     "@types/react-router-dom": "^5.3.3",
     "concurrently": "^8.2.0",
