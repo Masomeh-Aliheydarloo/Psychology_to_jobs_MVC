@@ -1,0 +1,17 @@
+{
+  "name": "psychology-to-jobs",
+  "version": "1.0.0",
+  "scripts": {
+    "build:frontend": "cd frontend && npm install && npm run build",
+    "build:backend": "cd backend && npm install && tsc",
+    "build": "npm run build:frontend && npm run build:backend",
+    "start": "node backend/dist/server.js",
+    "dev": "concurrently \"npm --prefix backend run dev\" \"npm --prefix frontend run dev\""
+  },
+  "dependencies": {
+    "concurrently": "^8.2.0",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "react-helmet-async": "^2.0.5"
+  }
+}
